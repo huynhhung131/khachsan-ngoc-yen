@@ -8,7 +8,7 @@ type Props = {
 
 export default function HotelJsonLd({ hotel }: Props) {
   const url = `${siteConfig.url}/khach-san/${hotel.slug}`;
-  const imageUrl = hotel.image ? `${siteConfig.url}${hotel.image}` : undefined;
+  const imageUrl = hotel.coverImage ? `${siteConfig.url}${hotel.coverImage}` : undefined;
 
   const jsonLd = {
     '@context': 'https://schema.org',
